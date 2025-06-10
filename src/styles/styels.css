@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url(../assets/img/background-melhor.png);
+}
+
+/* Header */
+
+header{
+    background-color: white;
+    backdrop-filter: blur(10px);
+    width: 50%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    margin:10px 25%;
+    z-index: 10;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+}
+
+.nav-links > a{
+    text-decoration: none;
+    color:black;
+    text-transform:capitalize;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.nav-links > a:hover{
+    text-decoration: underline;
+    color:black;
+    text-transform:uppercase;
+    transition: 0.3s ease-in-out;
+    transform: rotate(2deg);
+    font-size: 22px;
+}
+
+.nav-links > a:active{
+    text-decoration: underline;
+    color:black;
+    text-transform:uppercase;
+    transition: 0.3s ease-in-out;
+    transform: rotate(-2deg);
+    font-size: 18px;
+}
+
+/* Sempre colocar uma imagem diferente aqui possível js aqui??? */
+
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+    padding: 15%;
+}
+
+main>h1{
+    display:flex;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding:5px 10%;
+    margin:-40px 0px;
+    color:black;
+    background-color:white;
+}
+
+#character{
+    display:flex;
+    position: absolute;
+    width: 30%;
+    top:5%;
+    left:5%;
+    z-index: -1;
+}
+
+#logo{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+#logo:hover{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    z-index: 100;
+    transition: 0.3s;
+    transform:scale(1.1) rotate(1deg);
+}
+
+#logo:active{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    z-index: 100;
+    transition: 0.1s ease-in-out;
+    transform:scale(1.1) rotate(-1deg);
+}
+
+/* Aqui que muda a imagem */
+
+.introduction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    padding:15px 10%;
+}
+
+.firstText{
+    display:flex;
+    flex-direction: column;
+    padding:50px;
+    width: 40%;
+    background-color:white;
+}
+
+.firstText>h1{
+    font-size:40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.designRecente{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    transition: 0.3s;
+}
+
+.designRecente:hover{
+    display:flex;
+    flex-direction: column;
+    width: 51%;
+    transition: 0.3s;
+}
+
+.designRecentesDescricao{
+    background-color: white;
+    margin:-10px;
+    position: relative;
+    right: 70px;
+}
+
+.designRecentesDescricao>h2{
+    padding:5px 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:30px;
+}
+.designRecentesDescricao>p{
+    padding: 5px 20px;
+    font-size: 18px;
+}
+
+/* Quem sou page */
+
+.quemSou{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+}
+
+.minhaFoto{
+    display:flex;
+    position: relative;
+}
+
+.minhaFoto>p{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+    font-size: 20px;
+    right: 1px;
+    bottom:100px;
+    padding:5px 12px; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.minhaFoto>img{
+    margin:10px -40px; 
+    display: flex;
+    width: 620px;
+    rotate: 2deg;
+}
+
+.mainTextQuem{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.mainTextQuem>h1{
+    padding: 5px 12px;
+    font-size: 40px;
+}
+
+#logoQuem{
+    width: 720px;
+}
+
+.mainTextQuem>p{
+    margin: 30px 20px -40px 20px;
+    background-color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.quemSouContent{
+    padding:32px;
+    background-color:white;
+    width: 100%;
+}
+
+.quemSouIntro{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quemSouIntro>p{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    font-size: 20px;
+    width: 600px;
+}
+
+.quemSouEsq{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.quemSouEsq>p{
+    font-size: 20px;
+    width: 600px;
+}
+
+.quemSouDir{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.quemSouDir>p{
+    font-size: 20px;
+    width: 600px;
+}
+
+/* 404 */
+
+.FourOfour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin:10px;
+    color:white;
+    background-color: black;
+}
+
+.FourOfour>h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    padding:80px;
+    font-size: 80px;
+    text-align: center;
+}
+
+.FourOfour>p{
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:80px;
+}
+
+.FourOfour> p > a {
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: grey;
+}
+
+.FourOfour> p > a:hover {
+    font-size: 26px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: grey;
+    text-decoration: underline;
+}
