@@ -15,7 +15,10 @@ body{
 
 header{
     background-color: white;
-    backdrop-filter: blur(10px);
+    box-shadow: 5px 10px 0px black;
+    border: 5px solid black;
+    border-radius: 50px 0px 50px 0px;
+
     width: 50%;
     height: 50px;
 
@@ -153,6 +156,20 @@ main>p{
     padding:50px;
     width: 40%;
     background-color:white;
+    box-shadow: -20px 30px 0px black;
+    transition: 0.3s;
+}
+
+.firstText:hover{
+    display:flex;
+    flex-direction: column;
+    padding:50px;
+    width: 40%;
+    background-color:white;
+    box-shadow: -10px 25px 15px black;
+    transition: 0.3s;
+    transform: scale(1.1,1.1);
+    cursor:default;
 }
 
 .firstText>h1{
@@ -177,13 +194,15 @@ main>p{
     font-size:26px;
     font-weight: bolder;
     rotate:-4deg;
+    box-shadow: 5px 10px 0px black;
 }
 
 .designRecente:hover{
     display:flex;
     flex-direction: column;
-    width: 51%;
+    width: 55%;
     transition: 0.3s;
+    cursor:default;
 }
 
 .designRecentesDescricao{
@@ -191,6 +210,7 @@ main>p{
     margin:-10px;
     position: relative;
     right: 70px;
+    box-shadow: 10px 15px 0px black;
 }
 
 .designRecentesDescricao>h3{
@@ -201,6 +221,7 @@ main>p{
 .designRecentesDescricao>p{
     padding: 5px 20px;
     font-size: 18px;
+    width: 780px;
 }
 
 /* historias */
