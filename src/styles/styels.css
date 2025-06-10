@@ -81,6 +81,20 @@ main>h1{
     background-color:white;
 }
 
+main>p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position:absolute;
+    width: 400px;
+    padding: 10px 20px;
+    left:18%;
+    bottom:1%;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
 #character{
     display:flex;
     position: absolute;
@@ -130,6 +144,7 @@ main>h1{
     align-items: center;
     justify-content: space-between;
     z-index: 2;
+    margin:100px 0px;
     padding:15px 10%;
 }
 
@@ -148,9 +163,21 @@ main>h1{
 
 .designRecente{
     display:flex;
+    position:relative;
     flex-direction: column;
     width: 50%;
     transition: 0.3s;
+}
+
+.designRecente>h2{
+    background-color: white;
+    width: 280px;
+    padding:5px 12px;
+    margin: 0px 0px -30px 20px;
+    z-index: 2;
+    font-size:26px;
+    font-weight: bolder;
+    rotate:-4deg;
 }
 
 .designRecente:hover{
@@ -167,10 +194,10 @@ main>h1{
     right: 70px;
 }
 
-.designRecentesDescricao>h2{
+.designRecentesDescricao>h3{
     padding:5px 32px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size:30px;
+    font-size:35px;
 }
 .designRecentesDescricao>p{
     padding: 5px 20px;
