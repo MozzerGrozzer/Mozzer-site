@@ -136,7 +136,6 @@ main>p{
     transform:scale(1.1) rotate(-1deg);
 }
 
-/* Aqui que muda a imagem */
 
 .introduction{
     display: flex;
@@ -202,6 +201,77 @@ main>p{
 .designRecentesDescricao>p{
     padding: 5px 20px;
     font-size: 18px;
+}
+
+/* historias */
+
+.historias{
+    background-color: white;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 32px 5%;
+    margin: 150px 50px;
+}
+
+.historiasText{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    bottom:200px;
+}
+
+.historiasText>h2{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.historiasText>p{
+    font-size: 18px;
+}
+
+.historiasContent{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:32px;
+}
+
+.historiaContentCard{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+    padding:20px;
+    box-shadow: 5px 10px 0px black;
+    transition: 0.3s;
+}
+
+.historiaContentCard:hover{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+    padding:20px;
+    box-shadow: 5px 20px 5px black;
+    transition: 0.5s;
+    transform: translateY(-10px);
+}
+
+.historiaContentCard>h4{
+    font-size:25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:black;
+    font-weight: 200;
+}
+
+.historiaContentCard>p{
+    width: 200px;
+    text-align: center;
+    color:black;
 }
 
 /* Quem sou page */
