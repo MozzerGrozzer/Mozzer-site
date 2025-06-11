@@ -295,6 +295,78 @@ main>p{
     color:black;
 }
 
+/* Footer */
+
+footer{
+    background-color:white;
+    display:flex;
+    justify-content: space-around;
+    padding:32px;
+    box-shadow: 0px -15px 0px black;
+}
+
+.footerAside{
+    padding:32px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-right:2px solid black;
+}
+
+.footerAside>p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.footerAside>img{
+    width: 500px;
+}
+
+.footerLinks{
+    display:flex;
+    gap:32px;
+}
+
+.footerLinksNav{
+    margin:5px 32px;
+}
+
+.footerLinksNav>nav{
+    display:flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap:5px;
+}
+
+.footerLinksNav>nav>a{
+    font-size: 24px;
+    color:black;
+}
+
+.footerLinkSocial{
+    margin:5px 32px;
+}
+
+.footerLinksNav>h4{
+    font-size:24px;
+}
+
+.footerLinksSocialDiv{
+    margin-top: 50px;
+}
+.footerLinksSocial>h4{
+    font-size:25px;
+}
+
+.footerLinksSocialDiv>p{
+    font-size: 24px;
+}
+
+.footerLinksSocialDiv>a{
+    font-size: 24px;
+    color:black;
+}
+
 /* Quem sou page */
 
 .quemSou{
