@@ -80,10 +80,11 @@ main>h1{
     display:flex;
     justify-content: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding:5px 10%;
+    padding:5px 20%;
     margin:-40px 0px;
     color:black;
     background-color:white;
+    box-shadow: 10px 10px 0px black;
 }
 
 main>p{
@@ -246,7 +247,7 @@ main>p{
     flex-direction: column;
     align-items: center;
     box-shadow: -11px 15px 0px black;
-    top:-110px;
+    top:-120px;
     left:20%;
     rotate:-2deg;
 }
@@ -263,6 +264,7 @@ main>p{
 .historiasContent{
     background-color: white;
     padding:25px 70px;
+    box-shadow: 25px 25px 0px black;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -275,6 +277,8 @@ main>p{
     justify-content: center;
     align-items: center;
     border:2px solid black;
+    height:350px;
+    background-color:white;
     padding:20px;
     box-shadow: 5px 10px 0px black;
     transition: 0.3s;
@@ -286,6 +290,8 @@ main>p{
     justify-content: center;
     align-items: center;
     border:2px solid black;
+    background-color:white;
+    border-radius: 20px;
     padding:20px;
     box-shadow: 5px 20px 5px black;
     transition: 0.5s;
@@ -313,6 +319,7 @@ footer{
     justify-content: space-around;
     padding:32px;
     box-shadow: 0px -15px 0px black;
+    border-radius: 80px 0px 0px 0px;
 }
 
 .footerAside{
@@ -330,6 +337,13 @@ footer{
 
 .footerAside>img{
     width: 500px;
+    transition: 0.3s;
+}
+
+.footerAside>img:hover{
+    width: 500px;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1,1.1) rotate(1deg);
 }
 
 .footerLinks{
@@ -350,7 +364,15 @@ footer{
 
 .footerLinksNav>nav>a{
     font-size: 24px;
+    transition: 0.3s;
     color:black;
+}
+
+.footerLinksNav>nav>a:hover{
+    font-size: 27px;
+    text-decoration: underline;
+    color:black;
+    transition: 0.3s
 }
 
 .footerLinkSocial{
@@ -375,6 +397,14 @@ footer{
 .footerLinksSocialDiv>a{
     font-size: 24px;
     color:black;
+    transition: 0.3s;
+}
+
+.footerLinksSocialDiv>a:hover{
+    font-size: 28px;
+    text-decoration: underline;
+    color:black;
+    transition: 0.3s;
 }
 
 /* Quem sou page */
