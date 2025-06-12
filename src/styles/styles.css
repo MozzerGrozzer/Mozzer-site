@@ -11,6 +11,7 @@
 
 body{
     background-image: url(../assets/img/background-melhor.png);
+    font-size: 16px;
 }
 
 /* Header */
@@ -21,7 +22,7 @@ header{
     border: 5px solid black;
     border-radius: 50px 0px 50px 0px;
 
-    width: 33%;
+    width: 50%;
     height: 7%;
 
     display: flex;
@@ -29,7 +30,7 @@ header{
     justify-content: center;
     position: fixed;
 
-    left:35%;
+    left:25%;
     top:10px;
     padding: 1% 5%;
     z-index: 100;
@@ -47,7 +48,7 @@ header{
     color:black;
     text-transform:capitalize;
     transition: 0.3s;
-    font-size: 24px;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .nav-links > a:hover{
@@ -64,8 +65,7 @@ header{
     color:black;
     text-transform:uppercase;
     transition: 0.3s ease-in-out;
-    transform: rotate(-2deg);
-    font-size: 18px;
+    transform: rotate(-2deg) scale(1.2);
 }
 
 /* Sempre colocar uma imagem diferente aqui possível js aqui??? */
@@ -76,15 +76,16 @@ main{
     align-items: center;
     flex-direction: column;
     position:relative;
-    padding: 240px 10px;
+    padding: 10% 0px 20% 0px;
+    margin:2% 0px 10% 0px;
 }
 
 main>h1{
     display:flex;
     justify-content: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding:5px 20%;
-    margin:-40px 0px;
+    padding:1% 20%;
+    margin:-13% 0px;
     color:black;
     background-color:white;
     box-shadow: 10px 10px 0px black;
@@ -96,11 +97,11 @@ main>p{
     align-items: center;
     background-color: white;
     position:absolute;
-    width: 400px;
+    width: 20%;
     padding: 10px 20px;
-    left:18%;
-    bottom:1%;
-    font-size: 20px;
+    left:13%;
+    bottom:-18%;
+    font-size: 1.5em;
     font-family:'Courier New', Courier, monospace;
 }
 
@@ -219,7 +220,7 @@ main>p{
 .designRecentesDescricao>p{
     padding: 5px 20px;
     font-size: 18px;
-    width: 780px;
+    width: 100%;
 }
 
 /* historias */
