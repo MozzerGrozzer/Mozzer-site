@@ -21,16 +21,18 @@ header{
     border: 5px solid black;
     border-radius: 50px 0px 50px 0px;
 
-    width: 50%;
-    height: 50px;
+    width: 33%;
+    height: 7%;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     position: fixed;
 
-    margin:2% 10%;
-    z-index: 10;
+    left:35%;
+    top:10px;
+    padding: 1% 5%;
+    z-index: 100;
 }
 
 .nav-links{
@@ -40,20 +42,21 @@ header{
 }
 
 .nav-links > a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
     color:black;
     text-transform:capitalize;
     transition: 0.3s;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .nav-links > a:hover{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: underline;
     color:black;
     text-transform:uppercase;
     transition: 0.3s ease-in-out;
-    transform: rotate(2deg);
-    font-size: 22px;
+    transform: rotate(1deg) scale(1.1);
 }
 
 .nav-links > a:active{
@@ -115,29 +118,21 @@ main>p{
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    width: 60%;
-    z-index: 100;
+    width: 80%;
+    padding:10%;
+    z-index: 9;
     transition: 0.3s;
 }
 
 #logo:hover{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    width: 70%;
-    z-index: 100;
+    z-index: 9;
     transition: 0.3s;
     transform:scale(1.1) rotate(1deg);
 }
 
 #logo:active{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    width: 70%;
-    z-index: 100;
+    
+    z-index: 9;
     transition: 0.1s ease-in-out;
     transform:scale(1.1) rotate(-1deg);
 }
@@ -316,6 +311,7 @@ main>p{
 footer{
     background-color:white;
     display:flex;
+    flex-direction: row;
     justify-content: space-around;
     padding:32px;
     box-shadow: 0px -15px 0px black;
@@ -336,12 +332,12 @@ footer{
 }
 
 .footerAside>img{
-    width: 500px;
+    width: 100%;
     transition: 0.3s;
 }
 
 .footerAside>img:hover{
-    width: 500px;
+    width: 20%;
     transition: 0.3s ease-in-out;
     transform: scale(1.1,1.1) rotate(1deg);
 }
@@ -385,6 +381,8 @@ footer{
 
 .footerLinksSocialDiv{
     margin-top: 50px;
+    display:flex;
+    flex-direction: column;
 }
 .footerLinksSocial>h4{
     font-size:25px;
@@ -620,12 +618,9 @@ footer{
   .historiasContent {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  }
   footer{
-    display:flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
   }
   .footerAside{
     padding:40px;
@@ -655,6 +650,7 @@ footer{
 .footerLinksSocialDiv>a{
     font-size: 20px;
 }
+  }
 
 
 /* tablets e celulares grandes */
@@ -738,8 +734,6 @@ footer{
     padding:40px;
     display:flex;
     flex-direction: column;
-    align-items: center;
-    border-top:2px solid black;
     border-right:none;
 }
   .footerAside>img{
@@ -768,7 +762,7 @@ footer{
 @media (max-width: 480px) {
     
     header{
-        display:none;
+        display:flex;
     }
 
     main{
