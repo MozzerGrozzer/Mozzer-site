@@ -556,23 +556,18 @@ footer{
   }
 }
 
-@media (max-width: 768px) {
-    main{
-        padding:60px 10px;
-    }
-  .historiasContent {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-    
-    header{
+@media (max-width: 768px) { 
+  
+  header{
         display:none;
     }
 
     main{
         padding:60% 5%;
+    }
+
+    .nav-links > a{
+        font-size: 15px;
     }
 
     #logo{
@@ -589,8 +584,142 @@ footer{
     }
     
     main>p{
-        
         font-size:12px;
+        width: 90%;
+        left:5%;
+        bottom:20%;
+    }
+
+    .introduction{
+        display:flex;
+        flex-direction: column;
+        margin:1% 0px;
+    }
+    .firstText{
+        width: 100%;
+    }
+
+    .designRecente{
+        width: 100%;
+        margin:20% 0px;
+    }
+
+    .designRecentesDescricao{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin:10% 0px;
+        right:0px;
+        text-align: center;
+    }
+
+    .designRecentesDescricao>p{
+        width: 90%;
+    }
+
+    .historiasText{
+        left:0%;
+    }
+  .historiasContent {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer{
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .footerAside{
+    padding:40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-top:2px solid black;
+    border-right:none;
+}
+  .footerAside>img{
+    width: 120%;
+    transition: 0.3s;
+}
+.footerLinks{
+    display:flex;
+    gap:8px;
+}
+.footerLinksNav>nav>a{
+    font-size: 20px;
+    color:black;
+}
+.footerLinksSocialDiv>p{
+    font-size: 20px;
+    width: 50%;
+}
+.footerLinksSocialDiv>p:nth-child(3){
+    font-size: 14px;
+    width: 50%;
+}
+.footerLinksSocialDiv>a{
+    font-size: 20px;
+}
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    
+    header{
+        display:none;
+    }
+
+    main{
+        padding:60% 5%;
+    }
+
+    .nav-links > a{
+        font-size: 15px;
+    }
+
+    #logo{
+        width: 100%;
+    }
+
+    #character{
+        width:90%;
+        left:-30%;
+    }
+
+    main>h1{
+        margin:0px;
+    }
+    
+    main>p{
+        font-size:12px;
+        width: 90%;
+        left:5%;
+        bottom:20%;
+    }
+
+    .introduction{
+        display:flex;
+        flex-direction: column;
+        margin:1% 0px;
+    }
+    .firstText{
+        width: 100%;
+    }
+
+    .designRecente{
+        width: 100%;
+        margin:20% 0px;
+    }
+
+    .designRecentesDescricao{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin:10% 0px;
+        right:0px;
+        text-align: center;
+    }
+
+    .designRecentesDescricao>p{
         width: 90%;
     }
 
@@ -599,6 +728,7 @@ footer{
     }
   .historiasContent {
     grid-template-columns: 1fr;
+    margin:10%;
   }
 
   footer{
