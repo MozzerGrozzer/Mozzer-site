@@ -334,7 +334,6 @@ footer{
 }
 
 .footerAside>img:hover{
-    width: 20%;
     transition: 0.3s ease-in-out;
     transform: scale(1.1,1.1) rotate(1deg);
 }
