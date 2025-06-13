@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Mozzer Grozzer",
     "Deep Down i wish you was mine",
     "Mais 20 Commits para o Github!",
+    "git push --force",
     "https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D",
     "Git Commit -m 'Adoro Gatos'",
     "'Uma lince emocionalmente frágil e uma morcega irada entram na loja de conveniência do posto de gasolina de um velho miope'",
