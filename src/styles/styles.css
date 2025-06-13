@@ -84,7 +84,8 @@ main>h1{
     display:flex;
     justify-content: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding:1% 20%;
+    padding:1% 5%;
+    text-align: center;
     margin:-13% 0px;
     color:black;
     background-color:white;
@@ -93,6 +94,7 @@ main>h1{
 
 main>p{
     display:flex;
+    z-index: 6;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -121,19 +123,15 @@ main>p{
     flex-direction: column;
     width: 80%;
     padding:10%;
-    z-index: 9;
     transition: 0.3s;
 }
 
 #logo:hover{
-    z-index: 9;
     transition: 0.3s;
     transform:scale(1.1) rotate(1deg);
 }
 
 #logo:active{
-    
-    z-index: 9;
     transition: 0.1s ease-in-out;
     transform:scale(1.1) rotate(-1deg);
 }
@@ -197,10 +195,8 @@ main>p{
 }
 
 .designRecente:hover{
-    display:flex;
-    flex-direction: column;
-    width: 55%;
     transition: 0.3s;
+    transform: scale(1.1);
     cursor:default;
 }
 
