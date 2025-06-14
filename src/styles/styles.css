@@ -92,7 +92,7 @@ main>h1{
     box-shadow: 10px 10px 0px black;
 }
 
-main>p{
+#descriçãoCharLeft{
     display:flex;
     z-index: 6;
     justify-content: center;
@@ -103,6 +103,22 @@ main>p{
     padding: 10px 20px;
     left:13%;
     bottom:-18%;
+    transform: rotate(-1deg);
+    font-size: 1.5em;
+    font-family:'Courier New', Courier, monospace;
+}
+#descriçãoCharRight{
+    display:flex;
+    z-index: 6;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position:absolute;
+    width: 20%;
+    padding: 10px 20px;
+    right:13%;
+    bottom:-18%;
+    transform: rotate(1deg);
     font-size: 1.5em;
     font-family:'Courier New', Courier, monospace;
 }
@@ -113,6 +129,15 @@ main>p{
     width: 30%;
     top:5%;
     left:5%;
+    z-index: -1;
+}
+
+#secondCharacter{
+    display:flex;
+    position: absolute;
+    width: 40%;
+    top:5%;
+    right:5%;
     z-index: -1;
 }
 
@@ -143,7 +168,7 @@ main>p{
     align-items: center;
     justify-content: space-between;
     z-index: 2;
-    margin:100px 0px;
+    margin:20% 0px;
     padding:15px 10%;
 }
 
@@ -590,18 +615,27 @@ footer{
 
     #character{
         width:90%;
-        left:-30%;
+        left:-40%;
     }
-
+    #secondCharacter{
+        width: 100%;
+        right:-40%;
+    }
     main>h1{
         margin:0px;
     }
     
-    main>p{
+    #descriçãoCharLeft{
         font-size:24px;
         width: 40%;
         left:5%;
         bottom:10%;
+    }
+
+    #descriçãoCharRight{
+        width: 40%;
+        bottom:10%;
+        right: 5%;
     }
 
     .introduction{
@@ -703,11 +737,18 @@ footer{
         margin:0px;
     }
     
-    main>p{
+    #descriçãoCharLeft{
         font-size:24px;
-        width: 40%;
+        width: 70%;
         left:5%;
-        bottom:10%;
+        bottom:5%;
+    }
+
+    #secondCharacter{
+        display:none;
+    }
+    #descriçãoCharRight{
+        display:none;
     }
 
     .introduction{
