@@ -426,6 +426,36 @@ footer{
     transition: 0.3s;
 }
 
+/* Page Desenhos */
+
+.portfolioText{
+    background-color: white;
+    width: 40%;
+}
+
+.portfolio{
+  column-count: 6;
+  column-gap: 16px;
+  padding: 32px;
+}
+
+.portfolio img {
+  width: 100%;
+  margin-bottom: 16px;
+  border: 2px solid black;
+  box-shadow: 5px 10px 0px black;
+  break-inside: avoid;
+  transition: 0.3s ease;
+}
+
+.portfolio img:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+
+.portfolio>img{
+    width: 100%;
+}
+
 /* Quem sou page */
 
 .quemSou{
