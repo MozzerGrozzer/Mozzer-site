@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
+    <main class="verImagem">
+        <img id="imagemSelecionada" src="" alt="Arte Selecionada">
+    </main>
     
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    const nomeDaImagem = params.get("img");
+    const img = document.getElementById("imagemSelecionada");
+    img.src = `../assets/portfolio/${nomeDaImagem}`;
+  </script>
 </body>
 </html>

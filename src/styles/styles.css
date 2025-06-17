@@ -433,13 +433,22 @@ footer{
     width: 40%;
 }
 
-.portfolio{
-  column-count: 6;
+.portifolio{
+    display:flex;
+}
+
+.muralSettings{
+    background-color: white;
+    padding:2%;
+}
+
+.mural{
+  column-count: 4;
   column-gap: 16px;
   padding: 32px;
 }
 
-.portfolio img {
+.mural img {
   width: 100%;
   margin-bottom: 16px;
   border: 2px solid black;
@@ -448,12 +457,19 @@ footer{
   transition: 0.3s ease;
 }
 
-.portfolio img:hover {
+.mural img:hover {
   transform: scale(1.05) rotate(1deg);
 }
 
-.portfolio>img{
-    width: 100%;
+/* img blur */
+
+.arte-blurada img {
+  filter: blur(15px);
+  transition: 0.3s;
+}
+
+.arte-blurada.desbloqueada img {
+  filter: none;
 }
 
 /* Quem sou page */
