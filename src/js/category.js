@@ -24,13 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "vice-magazine-balck.jpg",
     ],
     memes: [
-      "Captura de tela 2025-05-02 124224.png",
-      "Captura de tela 2025-03-27 203941.png",
-      "Captura de tela 2025-03-27 205412.png",
-      "Captura de tela 2025-01-27 220819.png",
-      "i-gonna-eat-your-babies-i-gonna-eat-em-all.jpg",
-      "isso-me-lembra-meus-dias-de-crepusculo.jpg",
-      "ja-era-people-pack-up-your-things.jpg",
+      "Bestie-naz-amarela-roxa.png"
     ],
     rascunhos: [
       "Captura de tela 2024-11-14 162600.png",
@@ -65,13 +59,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function carregarCategoria(categoria) {
     mural.innerHTML = "";
-    if (!imagens[categoria]) return;
+    if (!imagens[categoria]) {
+      console.warn(`Categoria "${categoria}" não encontrada`);
+      return;
+    }
 
     imagens[categoria].forEach(nome => {
       const img = document.createElement("img");
-      img.src = `../assets/${categoria}/${nome}`;
+      let path = `../assets/${categoria}/${nome}`;
+      console.log(path);
+      
+      img.src = path;
       img.alt = "Arte da categoria";
       img.loading = "lazy";
+      
+      // Adicionar tratamento de erro para imagens que falham ao carregar
+      img.onerror = () => {
+        console.warn(`Falha ao carregar imagem: ${nome}`);
+        img.style.display = "none"; // Oculta a imagem que falhou
+      };
+      
       mural.appendChild(img);
     });
   }
@@ -79,10 +86,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // Começa com 'portfolio'
   carregarCategoria("portfolio");
 
-  document.querySelectorAll(".muralSettings").forEach(link => {
+  // Corrigido: selecionar apenas os links que têm data-categoria
+  document.querySelectorAll("a[data-categoria]").forEach(link => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       const categoria = link.dataset.categoria;
+      console.log("Categoria selecionada:", categoria); // Debug
       carregarCategoria(categoria);
     });
   });
